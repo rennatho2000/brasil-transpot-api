@@ -1,12 +1,12 @@
-import express, { request, response } from 'express'
+import express, { request, response } from "express";
 
-import './infra/database/connection'
-import { driveRouter } from './routes/drivers.route'
+import "./infra/database/connection";
+import { driveRouter } from "./routes/drivers.route";
 
-const app = express()
+const app = express();
 
-app.use(driveRouter)
+app.use(driveRouter);
 
 app.listen(3332, () => {
-  console.log('> Server is running...')
-})
+  console.log(">Server is running...");
+});
